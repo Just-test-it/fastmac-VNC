@@ -19,7 +19,7 @@ jobs:
       run: source configure.sh "$VNC_USER_PASSWORD" "$VNC_PASSWORD" "$NGROK_AUTH_TOKEN" "$Cloudflare_Tunnel_Install"
 #     - name: ngrok is now listening to VNC connections on...
 #       run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
-    - name: setup cloudflare
+#     - name: setup cloudflare
 #       run: sudo cloudflared tunnel --url tcp://127.0.0.1:5900
 #       run: brew install nginx && sudo nginx -s stop && sudo nginx && cloudflared tunnel run
     - name: Setup tmate session
