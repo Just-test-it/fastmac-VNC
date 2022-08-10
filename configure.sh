@@ -33,4 +33,4 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 # ngrok tcp 5900 &
 
 #configure Cloudflare Tunnel
-$4
+brew install cloudflare/cloudflare/cloudflared && $4
