@@ -21,6 +21,6 @@ jobs:
 #       run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
     - name: setup cloudflare
 #       run: sudo cloudflared tunnel --url tcp://127.0.0.1:5900
-      run: brew install nginx && sudo nginx -s stop && sudo nginx && cloudflared tunnel run
+#       run: brew install nginx && sudo nginx -s stop && sudo nginx && cloudflared tunnel run
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v2
