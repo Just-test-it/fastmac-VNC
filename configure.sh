@@ -1,4 +1,4 @@
-#configure.sh VNC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN
+#configure.sh VNC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN Cloudflare_Tunnel_Install
 
 #disable spotlight indexing
 sudo mdutil -i off -a
@@ -30,4 +30,7 @@ brew install ngrok
 
 #configure ngrok and start it
 ngrok authtoken $3
-ngrok tcp 5900 &
+# ngrok tcp 5900 &
+
+#configure Cloudflare Tunnel
+brew install cloudflare/cloudflare/cloudflared && $4
